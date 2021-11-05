@@ -1,0 +1,95 @@
+{
+  "card_name": "Poseidon",
+  "turn": {
+    "type": "ExtraActionsTurn",
+    "attributes": {
+      "turn_phases_list": [
+        {
+          "first_value": {
+            "type": "MOVE",
+            "optional": false
+          },
+          "second_value": {
+            "move_type": {
+              "type": "StandardMoveStrategy"
+            }
+          }
+        },
+        {
+          "first_value": {
+            "type": "BUILD",
+            "optional": false
+          },
+          "second_value": {
+            "building_type": {
+              "type": "StandardBuildStrategy"
+            },
+            "build_limiters": [
+              {
+                "type": "SameWorkerAsPreviousMovedLimiter"
+              }
+            ]
+          }
+        },
+        {
+          "first_value": {
+            "type": "BUILD",
+            "optional": true
+          },
+          "second_value": {
+            "building_type": {
+              "type": "StandardBuildStrategy"
+            },
+            "build_limiters": [
+              {
+                "type": "WorkerOnGroundLimiter"
+              },
+              {
+                "type": "DifferentWorkerThanMovedPreviousLimiter"
+              }
+            ]
+          }
+        },
+        {
+          "first_value": {
+            "type": "BUILD",
+            "optional": true
+          },
+          "second_value": {
+            "building_type": {
+              "type": "StandardBuildStrategy"
+            },
+            "build_limiters": [
+              {
+                "type": "DifferentWorkerThanMovedPreviousLimiter"
+              }
+            ]
+          }
+        },
+        {
+          "first_value": {
+            "type": "BUILD",
+            "optional": true
+          },
+          "second_value": {
+            "building_type": {
+              "type": "StandardBuildStrategy"
+            },
+            "build_limiters": [
+              {
+                "type": "DifferentWorkerThanMovedPreviousLimiter"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "win": {
+    "win_conditions": [
+      {
+        "type": "StandardWinCondition"
+      }
+    ]
+  }
+}

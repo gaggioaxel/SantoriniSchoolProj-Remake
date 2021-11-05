@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.client.view.gui.ForCards.ControllerThreePlayersChooseCard">
+   <top>
+      <VBox alignment="CENTER" prefHeight="96.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="The Challenger has chosen this cardsForTable" />
+            <Label prefHeight="18.0" prefWidth="423.0" text="Be sure to read all the cardsForTable information and select the ones that you like more." />
+            <Label text="And remember that one card is for you and the others are for the other players, so choose wisely." />
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="49.0" prefWidth="700.0">
+         <children>
+            <Button fx:id="goToBoard" layoutX="634.0" layoutY="12.0" mnemonicParsing="false" onAction="#goToNext" text="Button" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="404.0" prefWidth="227.5" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="firstCardImage" fitHeight="350.0" fitWidth="210.0" layoutX="9.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="0.0" />
+            <RadioButton fx:id="firstCard" layoutX="70.0" layoutY="358.0" mnemonicParsing="false" onAction="#clientHasChosen" text="RadioButton" AnchorPane.topAnchor="358.0" />
+            <TextArea fx:id="firstCardDescription" editable="false" layoutX="13.0" layoutY="379.0" prefHeight="170.0" prefWidth="200.0" wrapText="true" AnchorPane.bottomAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="236.25" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="secondCardImage" fitHeight="350.0" fitWidth="210.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" />
+            <RadioButton fx:id="secondCard" layoutX="72.0" layoutY="357.0" mnemonicParsing="false" onAction="#clientHasChosen" text="RadioButton" AnchorPane.topAnchor="358.0" />
+            <TextArea fx:id="secondCardDescription" editable="false" layoutX="15.0" layoutY="384.0" prefHeight="170.0" prefWidth="200.0" wrapText="true" AnchorPane.bottomAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="504.0" prefWidth="236.25" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="thirdCardImage" fitHeight="350.0" fitWidth="210.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="0.0" />
+            <RadioButton fx:id="thirdCard" layoutX="75.0" layoutY="356.0" mnemonicParsing="false" onAction="#clientHasChosen" text="RadioButton" AnchorPane.topAnchor="358.0" />
+            <TextArea fx:id="thirdCardDescription" editable="false" layoutX="19.0" layoutY="379.0" prefHeight="170.0" prefWidth="200.0" wrapText="true" AnchorPane.bottomAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

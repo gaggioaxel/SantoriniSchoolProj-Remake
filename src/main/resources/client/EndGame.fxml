@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.client.view.gui.ForEndGame.ControllerEndGame">
+   <children>
+      <BorderPane layoutX="200.0" layoutY="75.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox alignment="CENTER" blendMode="GREEN" prefHeight="400.0" prefWidth="423.0" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="loserId" prefHeight="45.0" prefWidth="228.0" />
+                  <Label fx:id="winnerId" prefHeight="65.0" prefWidth="301.0" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </VBox>
+         </center>
+         <bottom>
+            <AnchorPane prefHeight="43.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <top>
+            <ImageView fitHeight="150.0" fitWidth="603.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

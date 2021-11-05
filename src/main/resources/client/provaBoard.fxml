@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.client.view.gui.ForBoardGame.ControllerBoard">
+   <center>
+      <StackPane styleClass="bodybg" stylesheets="@images/BoardBackground.css">
+         <children>
+            <GridPane fx:id="boardPane" alignment="CENTER" prefHeight="500.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="0"/>
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <StackPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+         </children>
+      </StackPane>
+   </center>
+   <left>
+      <TabPane prefHeight="480.0" prefWidth="250.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Untitled Tab 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="250.0">
+                     <children>
+                        <VBox prefHeight="79.0" prefWidth="184.0" spacing="10.0" AnchorPane.bottomAnchor="392.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="Username:" />
+                              <HBox prefHeight="2.0" prefWidth="13.0" spacing="10.0">
+                                 <children>
+                                    <Label text="Workers Color:" />
+                                    <Circle fill="DODGERBLUE" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="14.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                 </children>
+                              </HBox>
+                              <Label text="God Card:" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                        <ImageView fitHeight="280.0" fitWidth="200.0" layoutX="3.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="14.0" layoutY="359.0" text="Card description:" wrapText="true" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </left>
+   <bottom>
+      <Pane>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="250.0" stylesheets="@images/style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="TOP_CENTER" layoutX="14.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="maleWorkerLabel" text=" Male Worker" />
+                        <ImageView id="maleWorker" fx:id="maleWorkerImage" fitHeight="145.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button fx:id="maleWorkerButton" mnemonicParsing="false" text="Choose me!" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" layoutX="125.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="femaleWorkerLabel" text="Female Worker" />
+                        <ImageView id="femaleWorker" fx:id="femaleWorkerImage" fitHeight="173.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button fx:id="femaleWorkerButton" mnemonicParsing="false" text="Choose me !" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="750.0" prefHeight="200.0" prefWidth="250.0" stylesheets="@images/style.css">
+               <children>
+                  <ImageView id="towerImage" fx:id="towerImage" fitHeight="200.0" fitWidth="208.0" layoutX="28.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <GridPane layoutX="261.0" prefHeight="200.0" prefWidth="500.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="245.0" minWidth="10.0" prefWidth="75.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="436.0" minWidth="10.0" prefWidth="425.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="82.0" minHeight="10.0" prefHeight="79.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="CurrentTurn" text="Current turn:" />
+                  <Label text="Label" GridPane.columnIndex="1" />
+                  <Label text="Allowed movements:" wrapText="true" GridPane.rowIndex="1" />
+                  <Label text="Suggestions:" GridPane.rowIndex="2" />
+                  <Label text="label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <AnchorPane prefHeight="59.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <HBox layoutX="14.0" layoutY="22.0" prefHeight="36.0" prefWidth="390.0" spacing="50.0">
+                           <children>
+                              <Button fx:id="move" mnemonicParsing="false" onAction="#getActionMoveToShow" text="Move" />
+                              <Button fx:id="build" mnemonicParsing="false" onAction="#getActionBuildToShow" text="Build" />
+                              <Button fx:id="undo" layoutX="187.0" layoutY="10.0" mnemonicParsing="false" text="Undo" />
+                              <Button fx:id="endTurn" mnemonicParsing="false" onAction="#getActionPass" text="End Turn" />
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+   </bottom>
+   <right>
+      <TabPane prefHeight="200.0" prefWidth="250.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Untitled Tab 1">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="250.0">
+                     <children>
+                        <VBox prefHeight="79.0" prefWidth="184.0" spacing="10.0" AnchorPane.bottomAnchor="392.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="Nome:" />
+                              <HBox prefHeight="2.0" prefWidth="13.0" spacing="10.0">
+                                 <children>
+                                    <Label text="Colore pedine:" />
+                                    <Circle fill="DODGERBLUE" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="14.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                 </children>
+                              </HBox>
+                              <Label text="God Card:" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                        <ImageView fitHeight="280.0" fitWidth="200.0" layoutX="3.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="14.0" layoutY="359.0" text="descrizione carta" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+          <Tab text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="79.0" prefWidth="184.0" spacing="10.0">
+                           <children>
+                              <Label text="Nome:" />
+                              <HBox prefHeight="2.0" prefWidth="13.0" spacing="10.0">
+                                 <children>
+                                    <Label text="Colore pedine:" />
+                                    <Circle fill="DODGERBLUE" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="14.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                 </children>
+                              </HBox>
+                              <Label text="God Card:" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                        <ImageView fitHeight="280.0" fitWidth="200.0" layoutX="-8.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="14.0" layoutY="359.0" text="descrizione carta" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </right>
+</BorderPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.client.view.gui.ForUsersInfoTableView.UsersInfoTableView">
+   <children>
+      <TableView fx:id="usersInfoTableView" cacheHint="SCALE" layoutX="96.0" layoutY="173.0" onMouseClicked="#itemSelected" prefHeight="354.0" prefWidth="408.0" tableMenuButtonVisible="false">
+        <columns>
+          <TableColumn fx:id="username" editable="false" prefWidth="75.0" text="UserName" />
+            <TableColumn fx:id="cardName" editable="false" prefWidth="83.0" text="Card Name" />
+            <TableColumn fx:id="cardDescription" editable="false" prefWidth="112.0" text="Card Description" />
+            <TableColumn fx:id="workersColor" editable="false" prefWidth="105.0" text="Workers Color" />
+        </columns>
+      </TableView>
+      <Label fx:id="chooseFirstPlayerLabel" layoutX="191.0" layoutY="121.0" prefHeight="28.0" prefWidth="218.0" text="Label" textAlignment="CENTER" />
+      <Button fx:id="confirmFirstPlayer" layoutX="274.0" layoutY="548.0" mnemonicParsing="false" onAction="#goToNext" text="Button" />
+   </children>
+</AnchorPane>

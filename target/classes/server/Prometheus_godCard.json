@@ -1,0 +1,71 @@
+{
+  "card_name": "Prometheus",
+  "turn": {
+    "type": "DifferentActionsTurn",
+    "attributes": {
+      "turn_phases_list": [
+        {
+          "first_value": {
+            "type": "BUILD",
+            "optional": false
+          },
+          "second_value": {
+            "building_type": {
+              "type": "StandardBuildStrategy"
+            },
+            "build_limiters": [
+              {
+                "type": "WontMoveUpLimiter"
+              }
+            ]
+          }
+        },
+        {
+          "first_value": {
+            "type": "MOVE",
+            "optional": false
+          },
+          "second_value": {
+            "move_type": {
+              "type": "StandardMoveStrategy"
+            },
+            "move_limiters": [
+              {
+                "type": "CantMoveUpLimiter",
+                "attributes": {
+                  "target": "SELF"
+                }
+              },
+              {
+                "type": "SameWorkerBuilderLimiter"
+              }
+            ]
+          }
+        },
+        {
+          "first_value": {
+            "type": "BUILD",
+            "optional": false
+          },
+          "second_value": {
+            "building_type": {
+              "type": "StandardBuildStrategy"
+            },
+            "build_limiters": [
+              {
+                "type": "SameWorkerAsPreviousMovedLimiter"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "win": {
+    "win_conditions": [
+      {
+        "type": "StandardWinCondition"
+      }
+    ]
+  }
+}

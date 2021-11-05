@@ -1,0 +1,36 @@
+.ImageEffect{
+    -fx-effect: dropshadow(gaussian, #000000, 30.0 , 0.5 , 0.0, 0.0);
+}
+
+#femaleWorker{
+    -fx-image: url("buildingObjects/femaleWorker.png");
+}
+
+#maleWorker{
+    -fx-image: url("buildingObjects/maleWorker.png");
+}
+
+#towerImage{
+    -fx-image: url("buildingObjects/completeTower.jpg");
+}
+
+#LEVEL_1{
+    -fx-background-image: url("buildingObjects/towerLevels/level1.png");
+    -fx-background-size: 100% 100%;
+}
+
+#LEVEL_2{
+    -fx-background-image: url("buildingObjects/towerLevels/level2.png");
+    -fx-background-size: 100% 100%;
+}
+
+#LEVEL_3{
+    -fx-background-image: url("buildingObjects/towerLevels/level3.png");
+    -fx-background-size: 100% 100%;
+}
+
+#DOME{
+    -fx-background-image: url("buildingObjects/towerLevels/levelDome.png");
+    -fx-background-size: 100% 100%;
+}
+

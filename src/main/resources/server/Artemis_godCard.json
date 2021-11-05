@@ -1,0 +1,44 @@
+{
+  "card_name": "Artemis",
+  "turn": {
+    "type": "StandardActionsTurn",
+    "attributes": {
+      "turn_phases_list": [
+        {
+          "first_value": {
+            "type": "MOVE",
+            "optional": false
+          },
+          "second_value": {
+            "move_type": {
+              "type": "ExtraMoveStrategy"
+            }
+          }
+        },
+        {
+          "first_value": {
+            "type": "BUILD",
+            "optional": false
+          },
+          "second_value": {
+            "building_type": {
+              "type": "StandardBuildStrategy"
+            },
+            "build_limiters": [
+              {
+                "type": "SameWorkerAsPreviousMovedLimiter"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "win": {
+    "win_conditions": [
+      {
+        "type": "StandardWinCondition"
+      }
+    ]
+  }
+}

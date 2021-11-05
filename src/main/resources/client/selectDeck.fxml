@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.client.view.gui.ForCards.ControllerChooseDeck">
+   <center>
+      <AnchorPane prefHeight="444.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="godImages" fitHeight="325.0" fitWidth="210.0" layoutX="95.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="selectedCard" layoutX="164.0" layoutY="369.0" mnemonicParsing="false" onAction="#addSelectedCardToListView" text="I want this!" />
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <VBox prefHeight="184.0" prefWidth="600.0">
+         <children>
+            <HBox prefHeight="198.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="100.0" prefWidth="201.0" spacing="5.0">
+                     <children>
+                        <Label text="The selected cardsForTable are:" />
+                        <ListView fx:id="selectedCards" prefHeight="108.0" prefWidth="191.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                  <MenuItem mnemonicParsing="false" onAction="#removeSelectedCard" text="Remove" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ListView>
+                        <Label fx:id="firstCard" text="Label" />
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+                  <TextArea fx:id="cardDescription" editable="false" prefHeight="100.0" prefWidth="400.0" />
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="107.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="goToCard2Players" layoutX="534.0" layoutY="11.0" mnemonicParsing="false" onAction="#confirmDeck" text="Next" />
+                  <Label fx:id="secondCard" layoutX="21.0" layoutY="13.0" text="Label" textFill="#eb1e1e" wrapText="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </bottom>
+   <top>
+      <VBox alignment="CENTER" prefHeight="92.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Since you are the Challenger first you have to choose a number of cardsForTable equal to the number of players." />
+            <Label text="The number of players you have chosen is : " />
+            <Label fx:id="numberOfPlayers" text="Label" />
+            <Label prefHeight="18.0" prefWidth="412.0" text="Be sure to read all the cardsForTable information to select the ones that you like more." />
+            <Label text="But remember that one card is for you and the others are for the other player/players, so choose wisely." />
+         </children>
+      </VBox>
+   </top>
+   <left>
+      <TreeView fx:id="godCards" onMouseClicked="#showCardImageAndDescription" prefHeight="471.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>

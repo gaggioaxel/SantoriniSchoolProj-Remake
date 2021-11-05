@@ -1,0 +1,44 @@
+{
+  "card_name": "Atlas",
+  "turn": {
+    "type": "StandardActionsTurn",
+    "attributes": {
+      "turn_phases_list": [
+        {
+          "first_value": {
+            "type": "MOVE",
+            "optional": false
+          },
+          "second_value": {
+            "move_type": {
+              "type": "StandardMoveStrategy"
+            }
+          }
+        },
+        {
+          "first_value": {
+            "type": "BUILD",
+            "optional": false
+          },
+          "second_value": {
+            "building_type": {
+              "type": "DomeBuilderStrategy"
+            },
+            "build_limiters": [
+              {
+                "type": "SameWorkerAsPreviousMovedLimiter"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "win": {
+    "win_conditions": [
+      {
+        "type": "StandardWinCondition"
+      }
+    ]
+  }
+}

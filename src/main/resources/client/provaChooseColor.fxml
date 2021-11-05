@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.client.view.gui.ForWorkersColor.ControllerChooseColorForWorkers">
+   <children>
+      <BorderPane layoutX="200.0" layoutY="75.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox alignment="CENTER" blendMode="GREEN" prefHeight="400.0" prefWidth="423.0" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="133.0" text="select color for workers :" />
+                  <ComboBox fx:id="chooseColor" prefHeight="25.0" prefWidth="131.0" onAction="#selectedColor" />
+                  <Label fx:id="chosenColor" text="Label" />
+                  <Label fx:id="chosenColor1" text="Label" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </VBox>
+         </center>
+         <bottom>
+            <AnchorPane prefHeight="43.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="confirmColor" layoutX="534.0" layoutY="9.0" mnemonicParsing="false" onAction="#goToNext" prefHeight="25.0" prefWidth="47.0" text="Next" />
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
