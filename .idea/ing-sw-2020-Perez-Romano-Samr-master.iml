@@ -4,9 +4,9 @@
     <output url="file://$MODULE_DIR$/../Santorini-Project/target/classes" />
     <output-test url="file://$MODULE_DIR$/../Santorini-Project/target/test-classes" />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/../Santorini-Project/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../Santorini-Project/src/main/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/../Santorini-Project/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/../Santorini-Project/target" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -23,5 +23,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: com.beust:jcommander:1.78" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.webjars:jquery:3.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.jetbrains:annotations:22.0.0" level="project" />
+    <orderEntry type="library" name="lib" level="project" />
   </component>
 </module>

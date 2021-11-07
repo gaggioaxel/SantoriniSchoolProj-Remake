@@ -4,7 +4,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.client.view.gui.ForUsersInfoTableView.UsersInfoTableView">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.client.view.gui.ForUsersInfoTableView.UsersInfoTableView">
    <children>
       <TableView fx:id="usersInfoTableView" cacheHint="SCALE" layoutX="96.0" layoutY="173.0" onMouseClicked="#itemSelected" prefHeight="354.0" prefWidth="408.0" tableMenuButtonVisible="false">
         <columns>

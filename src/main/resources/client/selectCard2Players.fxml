@@ -6,7 +6,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.client.view.gui.ForCards.ControllerTwoPlayersChooseCard">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.client.view.gui.ForCards.ControllerTwoPlayersChooseCard">
    <children>
       <Button fx:id="goTo3giocatori" layoutX="584.0" layoutY="661.0" mnemonicParsing="false" onAction="#goToNext" text="Button" />
       <HBox alignment="CENTER" layoutX="100.0" layoutY="93.0" prefHeight="538.0" prefWidth="490.0" spacing="40.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="93.0">

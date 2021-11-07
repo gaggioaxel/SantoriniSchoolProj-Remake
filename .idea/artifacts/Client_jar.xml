@@ -6,7 +6,7 @@
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.3.1/gson-2.3.1.jar" path-in-jar="/" />
       <element id="module-output" name="ing-sw-2020-Perez-Romano-Samr" />
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/src/main/java/it/polimi/ingsw/META-INF/client/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/java/META-INF/client/META-INF/MANIFEST.MF" />
       </element>
     </root>
   </artifact>
